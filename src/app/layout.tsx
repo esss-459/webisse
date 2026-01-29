@@ -29,6 +29,9 @@ export const metadata: Metadata = {
       },
     ],
   },
+};
+
+export const viewport = {
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#FAF7F6" },
     { media: "(prefers-color-scheme: dark)", color: "#161616" },
@@ -63,7 +66,7 @@ export default function RootLayout({
       <body>
         <Providers>{children}</Providers>
         <Script src="/js/libs.min.js" strategy="beforeInteractive" />
-        <Script src="/js/app.min.js" strategy="afterInteractive" />
+        <Script src="/js/app.min.js" strategy="lazyOnload" />
       </body>
     </html>
   );

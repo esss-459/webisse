@@ -4,7 +4,7 @@ import Header from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
 import PinnedProjects from "@/components/landing/PinnedProjects";
 import MarqueeSection from "@/components/landing/MarqueeSection";
-import About from "@/components/landing/About";
+import OurServices from "@/components/landing/OurServices";
 import StatsCards from "@/components/landing/StatsCards";
 import Expertise from "@/components/landing/Expertise";
 import ServicesParallax from "@/components/landing/ServicesParallax";
@@ -14,21 +14,25 @@ import Education from "@/components/landing/Education";
 import References from "@/components/landing/References";
 import ContactCTA from "@/components/landing/ContactCTA";
 import Footer from "@/components/landing/Footer";
-import EsraSection from "@/components/landing/EsraSection";
+import WhoWeAre from "@/components/landing/WhoWeAre";
+import { ChatProvider } from "@/context/ChatContext";
+import ChatWidget from "@/components/chat/ChatWidget";
 
 export const runtime = "nodejs";
 
 export default function Home() {
   return (
-    <>
+    <ChatProvider>
       <Loader />
       <Navigation />
       <Header />
       <main id="mxd-page-content" className="mxd-page-content">
         <Hero />
-        <EsraSection />
+        <WhoWeAre />
         <MarqueeSection />
-        <About />
+
+
+        <OurServices />
         <StatsCards />
         <Expertise />
         <ServicesParallax />
@@ -39,6 +43,7 @@ export default function Home() {
         <ContactCTA />
       </main>
       <Footer />
-    </>
+      <ChatWidget />
+    </ChatProvider>
   );
 }
