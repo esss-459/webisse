@@ -1,3 +1,22 @@
+:root {
+  --base: #1A1A1A;
+  --secondary: #FFFFFF;
+  --stroke: rgba(0, 0, 0, 0.1);
+  --accent: #9F8BE7;
+  --additional: #444444;
+  --grey-light: #F5F5F5;
+  --grey-mid: #888888;
+  --grey-dark: #444444;
+}
+
+[data-theme="dark"] {
+  --base: #FFFFFF;
+  --secondary: #161616;
+  --stroke: rgba(255, 255, 255, 0.1);
+  --accent: #E0E0E0;
+  --additional: #CCCCCC;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -9,4 +28,6 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Poppins", sans-serif;
+  background-color: var(--secondary);
+  color: var(--base);
 }

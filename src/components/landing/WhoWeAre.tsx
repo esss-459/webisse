@@ -147,14 +147,46 @@ export default function WhoWeAre() {
                                 }}
                                 style={{
                                     position: 'absolute',
-                                    bottom: '0',
+                                    bottom: '-20px',
                                     left: '0',
-                                    height: '4px',
+                                    height: '30px',
                                     width: '0%',
-                                    backgroundColor: '#9F8BE7',
-                                    transition: 'width 0.05s linear'
+                                    overflow: 'hidden',
+                                    display: 'flex',
+                                    gap: '8px',
+                                    alignItems: 'center',
+                                    transition: 'width 0.05s linear',
+                                    pointerEvents: 'none'
                                 }}
-                            />
+                            >
+                                <style jsx>{`
+                                    @keyframes dotJump {
+                                        0% { transform: translateY(0); }
+                                        5% { transform: translateY(-8px); }
+                                        10% { transform: translateY(0); }
+                                        100% { transform: translateY(0); }
+                                    }
+                                    .jump-star {
+                                        width: 12px;
+                                        height: 12px;
+                                        color: #9F8BE7;
+                                        flex-shrink: 0;
+                                        animation: dotJump 4s linear infinite;
+                                    }
+                                `}</style>
+                                {[...Array(40)].map((_, i) => (
+                                    <svg
+                                        key={i}
+                                        className="jump-star"
+                                        style={{ animationDelay: `-${i * 0.1}s` }}
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path d="M12 0C12 8 18 12 24 12C18 12 12 18 12 24C12 18 6 12 0 12C6 12 12 6 12 0Z" />
+                                    </svg>
+                                ))}
+                            </div>
                         </div>
                         <div style={{ marginBottom: '20px' }} />
 
@@ -193,14 +225,16 @@ export default function WhoWeAre() {
                             }}
                             onMouseEnter={(e) => {
                                 e.currentTarget.style.transform = "scale(1.04)";
-                                e.currentTarget.style.boxShadow = "0 12px 30px rgba(159, 139, 231, 0.22)";
+                                e.currentTarget.style.boxShadow = "0 15px 40px rgba(159, 139, 231, 0.5)";
+                                e.currentTarget.style.borderColor = "#9F8BE7";
                             }}
                             onMouseLeave={(e) => {
                                 e.currentTarget.style.transform = "scale(1)";
                                 e.currentTarget.style.boxShadow = "none";
+                                e.currentTarget.style.borderColor = "#E6E6EA";
                             }}
                         >
-                            <div style={{ marginBottom: "20px", color: "#9F8BE7", fontSize: "2.5rem" }}>
+                            <div style={{ marginBottom: "20px", color: "#1A1A1A", fontSize: "2.5rem" }}>
                                 <i className="ph-bold ph-paint-brush-broad"></i>
                             </div>
                             <h3 style={{ fontSize: "1.5rem", fontWeight: 600, marginBottom: "15px", color: "#333333" }}>
@@ -227,14 +261,16 @@ export default function WhoWeAre() {
                             }}
                             onMouseEnter={(e) => {
                                 e.currentTarget.style.transform = "scale(1.04)";
-                                e.currentTarget.style.boxShadow = "0 12px 30px rgba(159, 139, 231, 0.22)";
+                                e.currentTarget.style.boxShadow = "0 15px 40px rgba(159, 139, 231, 0.5)";
+                                e.currentTarget.style.borderColor = "#9F8BE7";
                             }}
                             onMouseLeave={(e) => {
                                 e.currentTarget.style.transform = "scale(1)";
                                 e.currentTarget.style.boxShadow = "none";
+                                e.currentTarget.style.borderColor = "#E6E6EA";
                             }}
                         >
-                            <div style={{ marginBottom: "20px", color: "#9F8BE7", fontSize: "2.5rem" }}>
+                            <div style={{ marginBottom: "20px", color: "#1A1A1A", fontSize: "2.5rem" }}>
                                 <i className="ph-bold ph-chart-line-up"></i>
                             </div>
                             <h3 style={{ fontSize: "1.5rem", fontWeight: 600, marginBottom: "15px", color: "#333333" }}>
@@ -261,14 +297,16 @@ export default function WhoWeAre() {
                             }}
                             onMouseEnter={(e) => {
                                 e.currentTarget.style.transform = "scale(1.04)";
-                                e.currentTarget.style.boxShadow = "0 12px 30px rgba(159, 139, 231, 0.22)";
+                                e.currentTarget.style.boxShadow = "0 15px 40px rgba(159, 139, 231, 0.5)";
+                                e.currentTarget.style.borderColor = "#9F8BE7";
                             }}
                             onMouseLeave={(e) => {
                                 e.currentTarget.style.transform = "scale(1)";
                                 e.currentTarget.style.boxShadow = "none";
+                                e.currentTarget.style.borderColor = "#E6E6EA";
                             }}
                         >
-                            <div style={{ marginBottom: "20px", color: "#9F8BE7", fontSize: "2.5rem" }}>
+                            <div style={{ marginBottom: "20px", color: "#1A1A1A", fontSize: "2.5rem" }}>
                                 <i className="ph-bold ph-device-mobile"></i>
                             </div>
                             <h3 style={{ fontSize: "1.5rem", fontWeight: 600, marginBottom: "15px", color: "#333333" }}>

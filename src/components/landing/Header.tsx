@@ -48,13 +48,13 @@ export default function Header() {
                             white-space: nowrap;
                             display: block;
                             
-                            /* Star-like Glint Effect Base */
-                            color: #888888;
+                            /* Star-like Glint Effect Base - Updated to Greyscale */
+                            color: #444444;
                             background: linear-gradient(
                                 135deg, 
-                                #888888 40%, 
+                                #444444 40%, 
                                 #ffffff 50%, 
-                                #888888 60%
+                                #444444 60%
                             );
                             background-size: 200% auto;
                             background-clip: text;
@@ -83,7 +83,7 @@ export default function Header() {
                 </a>
             </div>
             {/* header controls */}
-            <div className="mxd-header__controls loading__fade">
+            <div className="mxd-header__controls loading__fade" style={{ display: "flex", alignItems: "center" }}>
                 <button
                     className="btn btn-default btn-outline"
                     onClick={() => changeLanguage(locale === "tr" ? "en" : "tr")}
@@ -100,8 +100,8 @@ export default function Header() {
                         backgroundColor: "transparent",
                         cursor: "pointer",
                         color: "var(--base)",
-                        fontSize: "1.4rem",
-                        fontWeight: 500,
+                        fontSize: "1.2rem",
+                        fontWeight: 600,
                     }}
                     type="button"
                     aria-label="Change Language"
@@ -116,25 +116,28 @@ export default function Header() {
                     role="switch"
                     aria-label="light/dark mode"
                     aria-checked="true"
+                    style={{ marginRight: "10px" }}
                 ></button>
                 <a
                     className="btn btn-anim btn-default btn-mobile-icon slide-right-up"
                     href="mailto:hello@webisse.com.tr"
                     style={{
-                        backgroundColor: "#9F8BE7",
-                        borderColor: "#9F8BE7",
+                        backgroundColor: "#1A1A1A",
+                        borderColor: "#1A1A1A",
                         color: "#fff",
                         height: "46px", // Slightly smaller
                         padding: "0 25px",
                         display: "inline-flex",
                         alignItems: "center",
                         borderRadius: "30px",
-                        textDecoration: "none"
+                        textDecoration: "none",
+                        marginRight: "15px"
                     }}
                 >
                     <span className="btn-caption" style={{ fontWeight: 600 }}>{t.header.contactBtn}</span>
                     <i className="ph-bold ph-arrow-up-right" style={{ marginLeft: "8px" }}></i>
                 </a>
+
             </div>
         </header >
     );

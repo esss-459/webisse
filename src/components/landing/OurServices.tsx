@@ -37,7 +37,7 @@ export default function OurServices() {
                 left: "-5%",
                 width: "400px",
                 height: "400px",
-                background: "radial-gradient(circle, rgba(159, 139, 231, 0.08) 0%, rgba(255,255,255,0) 70%)",
+                background: "radial-gradient(circle, rgba(0, 0, 0, 0.05) 0%, rgba(255,255,255,0) 70%)",
                 filter: "blur(60px)",
                 zIndex: 0,
                 pointerEvents: "none"
@@ -107,7 +107,7 @@ export default function OurServices() {
                                     position: "absolute",
                                     width: "100%",
                                     height: "100%",
-                                    animation: "rotateLogo 25s linear infinite"
+                                    animation: "rotateLogo 40s linear infinite"
                                 }}>
                                     <svg viewBox="0 0 100 100" style={{ width: "100%", height: "100%" }}>
                                         <defs>
@@ -119,7 +119,7 @@ export default function OurServices() {
                                         <circle cx="50" cy="50" r="48" fill="#1A1A1A" />
                                         <text fill="rgba(255,255,255,0.9)" fontSize="10" fontWeight="700" letterSpacing="2.5">
                                             <textPath href="#circlePath" startOffset="0%">
-                                                WEB · SOLUTIONS · WEBISSE ·
+                                                WEBISSE · WB SOLUTIONS ·
                                             </textPath>
                                         </text>
                                     </svg>
@@ -339,11 +339,11 @@ export default function OurServices() {
                 }
 
                 .service-badge-modern:hover {
-                    box-shadow: 0 15px 35px rgba(159, 139, 231, 0.25) !important;
+                    box-shadow: 0 15px 40px rgba(159, 139, 231, 0.5) !important;
                     transform: scale(1.04) translateY(-5px) !important;
-                    border-color: rgba(159, 139, 231, 0.5) !important;
+                    border-color: #9F8BE7 !important;
                     z-index: 10 !important;
-                    color: #9F8BE7 !important;
+                    color: #1A1A1A !important;
                 }
 
                 .glass-box:hover {
@@ -353,7 +353,7 @@ export default function OurServices() {
                 }
 
                 .more-link:hover {
-                    color: #9F8BE7 !important;
+                    color: #1A1A1A !important;
                 }
 
                 .more-link:hover .arrow-icon {
@@ -367,7 +367,7 @@ export default function OurServices() {
                     left: 0;
                     width: 0;
                     height: 2px;
-                    background-color: #9F8BE7;
+                    background-color: #1A1A1A;
                     transition: width 0.3s ease;
                 }
 

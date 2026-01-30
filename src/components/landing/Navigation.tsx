@@ -9,14 +9,8 @@ export default function Navigation() {
     return (
         <nav className="mxd-nav__wrap" data-lenis-prevent="">
             {/* Hamburger Start */}
-            <div className="mxd-nav__contain loading__fade" style={{
-                position: "fixed",
-                top: "40px",
-                right: "40px",
-                zIndex: 1000,
-                pointerEvents: "auto"
-            }}>
-                <a href="#0" className="mxd-nav__hamburger" style={{ display: "block" }}>
+            <div className="mxd-nav__contain loading__fade">
+                <a href="#0" className="mxd-nav__hamburger">
                     {/* flip element */}
                     <div className="hamburger__base"></div>
                     <div className="hamburger__line"></div>
@@ -221,7 +215,7 @@ export default function Navigation() {
                         <div className="mxd-menu__data menu-fade-in">
                             <p className="t-xsmall">
                                 Webisse
-                                <i className="ph-fill ph-heart t-additional"></i>
+                                <i className="ph-fill ph-heart" style={{ color: "#1A1A1A" }}></i>
                                 {t.navigation.with}
                                 <a
                                     className="no-effect"

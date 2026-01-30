@@ -12,6 +12,7 @@ import Experience from "@/components/landing/Experience";
 import TechStack from "@/components/landing/TechStack";
 import Education from "@/components/landing/Education";
 import References from "@/components/landing/References";
+import CustomReferences from "@/components/landing/CustomReferences";
 import ContactCTA from "@/components/landing/ContactCTA";
 import Footer from "@/components/landing/Footer";
 import WhoWeAre from "@/components/landing/WhoWeAre";
@@ -33,6 +34,7 @@ export default function Home() {
 
 
         <OurServices />
+        <CustomReferences />
         <StatsCards />
         <Expertise />
         <ServicesParallax />
