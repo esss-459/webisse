@@ -161,6 +161,12 @@ export const dictionaries = {
             terms: "Kullanım Koşulları",
             ecosystem: "Ekosistem",
             rights: "Webisse © 2025"
+        },
+        notFound: {
+            title: "404",
+            subtitle: "Sistem Kayıp",
+            description: "Aradığınız koordinatlar dijital boşlukta kaybolmuş veya başka bir boyuta taşınmış olabilir.",
+            backHome: "Sisteme Geri Dön"
         }
     },
     en: {
@@ -323,6 +329,12 @@ export const dictionaries = {
             terms: "Terms of Use",
             ecosystem: "Ecosystem",
             rights: "Webisse © 2025"
+        },
+        notFound: {
+            title: "404",
+            subtitle: "System Lost",
+            description: "The coordinates you are looking for might be lost in digital space or moved to another dimension.",
+            backHome: "Back to System"
         }
     }
 };
