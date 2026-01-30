@@ -6,7 +6,6 @@ import PinnedProjects from "@/components/landing/PinnedProjects";
 import MarqueeSection from "@/components/landing/MarqueeSection";
 import OurServices from "@/components/landing/OurServices";
 import StatsCards from "@/components/landing/StatsCards";
-import Expertise from "@/components/landing/Expertise";
 import ServicesParallax from "@/components/landing/ServicesParallax";
 import Experience from "@/components/landing/Experience";
 import TechStack from "@/components/landing/TechStack";
@@ -36,7 +35,6 @@ export default function Home() {
         <OurServices />
         <CustomReferences />
         <StatsCards />
-        <Expertise />
         <ServicesParallax />
         <Experience />
         <TechStack />

@@ -29,7 +29,7 @@ export default function CustomReferences() {
                         <style jsx>{`
                             @keyframes metallicShimmer {
                                 0% { background-position: -200% center; }
-                                20% { background-position: 200% center; }
+                                60% { background-position: 200% center; }
                                 100% { background-position: 200% center; }
                             }
                             
@@ -54,7 +54,7 @@ export default function CustomReferences() {
                                 background-clip: text;
                                 -webkit-text-fill-color: transparent;
                                 
-                                animation: metallicShimmer 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+                                animation: metallicShimmer 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
                             }
                         `}</style>
                         <h2 className="metallic-text">
