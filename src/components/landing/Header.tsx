@@ -90,7 +90,7 @@ export default function Header() {
                     style={{
                         height: "4rem",
                         width: "4rem",
-                        display: "flex",
+                        display: "none", // Hidden for now, can be re-enabled later
                         alignItems: "center",
                         justifyContent: "center",
                         padding: 0,
