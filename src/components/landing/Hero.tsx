@@ -46,42 +46,10 @@ export default function Hero() {
                                         <div className="container-fluid p-0">
                                             <div className="row g-0">
                                                 <div className="col-6 col-lg-4 col-xl-2 loading__item">
-                                                    <ul>
-                                                        <li>
-                                                            <p className="t-small">{t.hero.strategy}</p>
-                                                        </li>
-                                                        <li>
-                                                            <p className="t-small">{t.hero.premiumDesign}</p>
-                                                        </li>
-                                                        <li>
-                                                            <p className="t-small">{t.hero.experience}</p>
-                                                        </li>
-                                                        <li>
-                                                            <p className="t-small">{t.hero.performance}</p>
-                                                        </li>
-                                                        <li>
-                                                            <p className="t-small">{t.hero.growth}</p>
-                                                        </li>
-                                                    </ul>
+                                                    {/* Madde listesi kaldırıldı */}
                                                 </div>
                                                 <div className="col-6 col-lg-4 col-xl-2 loading__item">
-                                                    <ul>
-                                                        <li>
-                                                            <p className="t-small">{t.hero.uiux}</p>
-                                                        </li>
-                                                        <li>
-                                                            <p className="t-small">{t.hero.webDesign}</p>
-                                                        </li>
-                                                        <li>
-                                                            <p className="t-small">{t.hero.webDev}</p>
-                                                        </li>
-                                                        <li>
-                                                            <p className="t-small">{t.hero.brandIdentity}</p>
-                                                        </li>
-                                                        <li>
-                                                            <p className="t-small">{t.hero.contentCreative}</p>
-                                                        </li>
-                                                    </ul>
+                                                    {/* Madde listesi kaldırıldı */}
                                                 </div>
                                             </div>
                                         </div>
@@ -89,7 +57,16 @@ export default function Hero() {
                                 </div>
                                 <div className="mxd-hero-06__headline">
                                     <div className="hero-06-headline__descr">
-                                        <p className="loading__item">
+                                        <p className="loading__item" style={{
+                                            fontSize: "2.2rem",
+                                            lineHeight: "1",
+                                            marginBottom: "35px",
+                                            marginTop: "-45px",
+                                            fontWeight: 600,
+                                            color: "#FFFFFF",
+                                            whiteSpace: "nowrap",
+                                            letterSpacing: "-0.01em"
+                                        }}>
                                             {t.hero.headlineDescription}
                                         </p>
                                         <div className="hero-06-headline__btn loading__item">

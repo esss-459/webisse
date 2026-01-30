@@ -9,8 +9,14 @@ export default function Navigation() {
     return (
         <nav className="mxd-nav__wrap" data-lenis-prevent="">
             {/* Hamburger Start */}
-            <div className="mxd-nav__contain loading__fade">
-                <a href="#0" className="mxd-nav__hamburger">
+            <div className="mxd-nav__contain loading__fade" style={{
+                position: "fixed",
+                top: "40px",
+                right: "40px",
+                zIndex: 1000,
+                pointerEvents: "auto"
+            }}>
+                <a href="#0" className="mxd-nav__hamburger" style={{ display: "block" }}>
                     {/* flip element */}
                     <div className="hamburger__base"></div>
                     <div className="hamburger__line"></div>

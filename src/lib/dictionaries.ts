@@ -34,7 +34,7 @@ export const dictionaries = {
             webDev: "Web Geliştirme",
             brandIdentity: "Marka Kimliği",
             contentCreative: "İçerik & Kreatif",
-            headlineDescription: "Webisse, premium müşteriler için strateji, tasarım ve yazılım üreten teknoloji şirketidir.",
+            headlineDescription: "Webisse...Premium dijital hizmet.",
             getQuote: "Teklif Al * Teklif Al * Teklif Al * ",
             headlineTitle: "Kurumsal markalar için premium yazılım şirketi",
             marqueeAgency: "Yazılım Şirketi", // Was Kurumsal Ajans

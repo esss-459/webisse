@@ -10,14 +10,14 @@ export default function Header() {
         <header id="header" className="mxd-header">
             {/* header logo */}
             <div className="mxd-header__logo loading__fade">
-                <a href="index-main.html" className="mxd-logo" style={{ alignItems: "center", marginTop: "10px", textDecoration: "none", maxWidth: "90vw" }}>
+                <a href="index-main.html" className="mxd-logo" style={{ alignItems: "center", marginTop: "0px", textDecoration: "none", maxWidth: "90vw" }}>
                     {/* logo icon */}
                     <img
                         src="/img/w-logo.png"
                         alt="Webisse Logo"
                         className="mxd-logo__image"
                         style={{
-                            width: "90px", // Reduced from 110px
+                            width: "80px", // Reduced from 90px
                             height: "auto",
                             objectFit: "contain",
                             marginRight: "15px",
@@ -27,20 +27,28 @@ export default function Header() {
                     />
 
                     <style jsx>{`
-                        @keyframes shine-sweep {
+                        @keyframes shine-sequential {
                             0% { background-position: 200% center; }
+                            15% { background-position: -200% center; }
+                            100% { background-position: -200% center; }
+                        }
+                        @keyframes shine-sequential-2 {
+                            0% { background-position: 200% center; }
+                            15% { background-position: 200% center; }
+                            30% { background-position: -200% center; }
                             100% { background-position: -200% center; }
                         }
                         .premium-shimmer {
-                            font-size: 4rem;
+                            font-size: 3.6rem;
                             font-family: 'Poppins', sans-serif;
                             font-weight: 900;
-                            text-transform: none; /* Removed uppercase */
+                            text-transform: none;
                             letter-spacing: -2px;
-                            line-height: 0.9;
+                            line-height: 0.95;
                             white-space: nowrap;
+                            display: block;
                             
-                            /* Star-like Glint Effect */
+                            /* Star-like Glint Effect Base */
                             color: #888888;
                             background: linear-gradient(
                                 135deg, 
@@ -52,16 +60,26 @@ export default function Header() {
                             background-clip: text;
                             -webkit-background-clip: text;
                             -webkit-text-fill-color: transparent;
-                            
-                            /* Slower, premium speed */
-                            animation: shine-sweep 6s ease-in-out infinite;
+                        }
+
+                        .shimmer-1 {
+                            animation: shine-sequential 10s linear infinite;
+                        }
+
+                        .shimmer-2 {
+                            animation: shine-sequential-2 10s linear infinite;
                         }
                     `}</style>
 
                     {/* logo text */}
-                    <span className="mxd-logo__text premium-shimmer">
-                        Webisse Teknoloji
-                    </span>
+                    <div className="mxd-logo__text" style={{ display: "flex", flexDirection: "column", marginTop: "-5px" }}>
+                        <span className="premium-shimmer shimmer-1">
+                            Webisse
+                        </span>
+                        <span className="premium-shimmer shimmer-2">
+                            Teknoloji
+                        </span>
+                    </div>
                 </a>
             </div>
             {/* header controls */}
