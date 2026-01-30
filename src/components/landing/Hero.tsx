@@ -26,16 +26,12 @@ export default function Hero() {
                                     autoPlay
                                     loop
                                     muted
-                                    poster="img/video/1920x1080_video-03.webp"
+                                    poster="/video/1920x1080_video-03.webp"
                                 >
-                                    <source type="video/mp4" src="files/animation.mp4" />
+                                    <source type="video/mp4" src="/files/animation.mp4" />
                                     <source
                                         type="video/webm"
-                                        src="img/video/1920x1080_video-03.webm"
-                                    />
-                                    <source
-                                        type="video/ogv"
-                                        src="img/video/1920x1080_video-03.ogv"
+                                        src="/video/1920x1080_video-03.webm"
                                     />
                                 </video>
                                 <div className="hero-06-video__cover"></div>
@@ -108,7 +104,7 @@ export default function Hero() {
                                                 {/* image */}
                                                 <img
                                                     className="btn-rotating__image"
-                                                    src="img/icons/300x300_obj-btn-03.webp"
+                                                    src="/img/icons/300x300_obj-btn-03.webp"
                                                     alt="Object"
                                                 />
                                             </a>
@@ -184,7 +180,7 @@ export default function Hero() {
                                 {/* image */}
                                 <img
                                     className="btn-rotating__image"
-                                    src="img/icons/300x300_obj-btn-03.webp"
+                                    src="/img/icons/300x300_obj-btn-03.webp"
                                     alt="Object"
                                 />
                             </a>

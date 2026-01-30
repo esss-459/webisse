@@ -19,7 +19,7 @@ export default function ContactCTA() {
                             <div className="mxd-promo__content">
                                 <p className="mxd-promo__title anim-uni-in-up">
                                     <span className="mxd-promo__icon">
-                                        <img src="img/icons/300x300_obj-cta-01.webp" alt="Icon" />
+                                        <img src="/img/icons/300x300_obj-cta-01.webp" alt="Icon" />
                                     </span>
                                     <span className="mxd-promo__caption reveal-type">
                                         {t.cta.caption}

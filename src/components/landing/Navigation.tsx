@@ -195,16 +195,12 @@ export default function Navigation() {
                                             autoPlay
                                             loop
                                             muted
-                                            poster="img/video/540x310_video-01.webp"
+                                            poster="/video/540x310_video-01.webp"
                                         >
-                                            <source type="video/mp4" src="files/animation.mp4" />
+                                            <source type="video/mp4" src="/files/animation.mp4" />
                                             <source
                                                 type="video/webm"
-                                                src="img/video/540x310_video-01.webm"
-                                            />
-                                            <source
-                                                type="video/ogv"
-                                                src="img/video/540x310_video-01.ogv"
+                                                src="/video/540x310_video-01.webm"
                                             />
                                         </video>
                                     </div>

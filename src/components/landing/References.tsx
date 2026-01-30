@@ -56,7 +56,7 @@ export default function References() {
                                         </div>
                                         <div className="mxd-preview-hover">
                                             <i className="mxd-preview-hover__icon">
-                                                <img src="img/icons/icon-eye.svg" alt="Eye Icon" />
+                                                <img src="/img/icons/icon-eye.svg" alt="Eye Icon" />
                                             </i>
                                         </div>
                                         <div className="mxd-blog-preview__tags">
@@ -85,7 +85,7 @@ export default function References() {
                                         </div>
                                         <div className="mxd-preview-hover">
                                             <i className="mxd-preview-hover__icon">
-                                                <img src="img/icons/icon-eye.svg" alt="Eye Icon" />
+                                                <img src="/img/icons/icon-eye.svg" alt="Eye Icon" />
                                             </i>
                                         </div>
                                         <div className="mxd-blog-preview__tags">
@@ -112,7 +112,7 @@ export default function References() {
                                         </div>
                                         <div className="mxd-preview-hover">
                                             <i className="mxd-preview-hover__icon">
-                                                <img src="img/icons/icon-eye.svg" alt="Eye Icon" />
+                                                <img src="/img/icons/icon-eye.svg" alt="Eye Icon" />
                                             </i>
                                         </div>
                                         <div className="mxd-blog-preview__tags">
